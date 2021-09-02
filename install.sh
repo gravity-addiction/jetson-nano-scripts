@@ -12,12 +12,12 @@ sudo apt update && \
 sudo apt dist-upgrade -y
 
 cd "${PWDSRC}" && \
-./installers/apt-install.sh && \
+./packages/apt-install.sh && \
 cd "${PWDSRC}" && \
-./installers/ffmpeg-mpv.sh && \
+./packages/ffmpeg-mpv.sh && \
 cd "${PWDSRC}" && \
-./installers/redis.sh && \
+./packages/redis.sh && \
 cd "${PWDSRC}" && \
-./installers/nginx.sh && \
+./packages/nginx.sh && \
 echo && \
 echo "Installer Completed!"
